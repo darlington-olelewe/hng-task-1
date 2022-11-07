@@ -22,20 +22,20 @@ public class OperationServiceImpl implements OperationService {
         if (request.getOperation_type().equalsIgnoreCase(OperationType.ADDITION.value()) || request.getOperation_type().toLowerCase().contains(arr.get(1))
         || request.getOperation_type().toLowerCase().contains(arr.get(3))) {
              response = Response.builder()
-                    .slackUsername("Deenn")
+                    .slackUsername("xpressrules")
                     .result(request.getX() + request.getY())
                     .operation_type(OperationType.ADDITION.value().toLowerCase())
                     .build();
         } else if (request.getOperation_type().equalsIgnoreCase(OperationType.SUBTRACTION.value())|| request.getOperation_type().toLowerCase().contains(arr.get(0)))  {
             response = Response.builder()
-                    .slackUsername("Deenn")
+                    .slackUsername("xpressrules")
                     .result(request.getX() - request.getY())
                     .operation_type(OperationType.SUBTRACTION.value().toLowerCase())
                     .build();
 
         } else if (request.getOperation_type().equalsIgnoreCase(OperationType.MULTIPLICATION.value())|| request.getOperation_type().toLowerCase().contains(arr.get(2)))  {
             response = Response.builder()
-                    .slackUsername("Deenn")
+                    .slackUsername("xpressrules")
                     .result(request.getX() * request.getY())
                     .operation_type(OperationType.MULTIPLICATION.value().toLowerCase())
                     .build();
